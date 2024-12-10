@@ -134,7 +134,7 @@
                     <img src="https://i.redd.it/6i2fwuugx1f91.gif" alt="Harold's Image">
                 </div>
                 <span>Harold</span>
-                <p class="job">Lider Dictador</p>
+                <p class="job">Lider Super Dictador</p>
 
             </div>
             <div class="carta">
