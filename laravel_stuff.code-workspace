@@ -1,307 +1,309 @@
 {
-    "tasks": {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "label": "Refrescar Proyecto (Solo si lo exportaste de GitHub)",
-                "type": "shell",
-                "command": "npm run update_proyect",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Probar en localhost",
-                "type": "shell",
-                "command": "npm run test_localhost",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Probar en Laravel",
-                "type": "shell",
-                "command": "npm run test_laravel",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Iniciar Migraciones",
-                "type": "shell",
-                "command": "npm run make_tables",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Actualizar Migraciones",
-                "type": "shell",
-                "command": "npm run make_tables",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Crear Modelo",
-                "type": "shell",
-                "command": "npm run make_model",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Crear Migracion",
-                "type": "shell",
-                "command": "npm run make_migration",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Crear Controllador",
-                "type": "shell",
-                "command": "npm run make_controller",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Crear Vista",
-                "type": "shell",
-                "command": "npm run make_view",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            },
-            {
-                "label": "Limpiar Cache (Todo)",
-                "type": "shell",
-                "command": "npm run clear_cache",
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": []
-            }
-        ]
-    },
-    "folders": [
-        {
-            "path": "laravel_pagina"
-        }
-    ],
-    "settings": {
-        "files.associations": {
-            "*.blade.php": "blade",
-            "*.css": "css"
-        },
-        "vscord.app.name": "Visual Studio Code",
-        "vscord.status.details.enabled": false,
-        "vscord.status.state.text.editing": "Editando {file_name}{file_extension}",
-        "vscord.status.state.text.debugging": "Probando el archivo {file_name}{file_extension}",
-        "vscord.status.state.text.idle": "Me quede dormido en el archivo {file_name}{file_extension}",
-        "vscord.status.state.text.notInFile": "No estoy haciendo algo",
-        "vscord.status.state.text.noWorkspaceFound": "Por alguna razon, no hay workspace",
-        "vscord.status.state.text.viewing": "Ando checando el archivo {file_name}{file_extension}",
-        "vscord.status.image.large.editing.text": "Editando un archivo {LANG}",
-        "vscord.status.image.large.debugging.text": "Ando testeando un archivo {LANG}",
-        "vscord.status.image.large.idle.text": "Me quede afk en un archivo {LANG}",
-        "vscord.status.image.large.notInFile.text": "Missingno",
-        "vscord.status.image.large.viewing.text": "Ando checando un archivo {LANG}",
-        "vscord.status.image.small.debugging.text": "Probando owo",
-        "vscord.status.image.small.editing.text": "Editando -w-",
-        "vscord.status.image.small.idle.text": "zZzzZ",
-        "vscord.status.image.small.notInFile.text": "???",
-        "vscord.status.image.small.viewing.text": "👀",
-        "eslint.validate": ["javascript", "json", "typescript", "css"],
-        "editor.fontSize": 13,
-        "editor.wordWrap": "on",
-        "window.zoomLevel": -1,
-        "editor.formatOnSave": true,
-        "editor.useTabStops": false,
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true,
-        "files.autoSave": "onFocusChange",
-        "prettier.tabWidth": 4,
-        "[sql]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[java]": {
-            "editor.formatOnPaste": false,
-            "editor.formatOnSave": false,
-            "editor.formatOnType": false,
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[css]": {
-            "editor.defaultFormatter": "vscode.css-language-features",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[html]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[php]": {
-            "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[blade]": {
-            "editor.defaultFormatter": "shufo.vscode-blade-formatter",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4,
-            "editor.formatOnPaste": false,
-            "editor.formatOnSave": true,
-            "editor.formatOnType": false
-        },
-        "[json]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[jsonc]": {
-            "editor.defaultFormatter": "esbenp.prettier-vscode",
-            "editor.useTabStops": false,
-            "editor.tabSize": 4
-        },
-        "[javascript]": {
-            "editor.defaultFormatter": "vscode.typescript-language-features",
-            "editor.useTabStops": true,
-            "editor.tabSize": 4
-        },
-        "[typescript]": {
-            "editor.defaultFormatter": "vscode.typescript-language-features",
-            "editor.useTabStops": true,
-            "editor.tabSize": 4
-        },
-        "eslint.codeAction.showDocumentation": {
-            "enable": true
-        },
-        "eslint.format.enable": true,
-        "workbench.editor.enablePreview": true,
-        "editor.autoClosingBrackets": "always",
-        "editor.autoClosingComments": "always",
-        "editor.autoClosingDelete": "always",
-        "editor.autoClosingOvertype": "always",
-        "editor.autoClosingQuotes": "always",
-        "editor.definitionLinkOpensInPeek": true,
-        "editor.smoothScrolling": true,
-        "editor.tabCompletion": "on",
-        "diffEditor.codeLens": true,
-        "editor.minimap.autohide": true,
-        "editor.suggest.insertMode": "replace",
-        "files.trimTrailingWhitespace": true,
-        "workbench.reduceMotion": "on",
-        "workbench.startupEditor": "none",
-        "problems.defaultViewMode": "table",
-        "problems.showCurrentInStatus": true,
-        "github.experimental.multipleAccounts": true,
-        "vsicons.presets.jsonOfficial": false,
-        "vsicons.projectDetection.autoReload": false,
-        "vscord.behaviour.debug": true,
-        "jsdoc-generator.generativeLanguage": "Spanish",
-        "jsdoc-generator.generativeModel": "gpt-4",
-        "json.format.keepLines": true,
-        "json.schemaDownload.enable": true,
-        "path-intellisense.showHiddenFiles": true,
-        "javascript.experimental.updateImportsOnPaste": true,
-        "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
-        "javascript.format.semicolons": "insert",
-        "javascript.referencesCodeLens.enabled": true,
-        "javascript.updateImportsOnFileMove.enabled": "always",
-        "js/ts.implicitProjectConfig.checkJs": true,
-        "js/ts.implicitProjectConfig.experimentalDecorators": true,
-        "js/ts.implicitProjectConfig.module": "ES2020",
-        "typescript.experimental.updateImportsOnPaste": true,
-        "typescript.updateImportsOnFileMove.enabled": "always",
-        "typescript.format.semicolons": "insert",
-        "git.ignoreLimitWarning": true,
-        "workbench.preferredDarkColorTheme": "Dracula Theme",
-        "workbench.colorTheme": "Dracula Theme",
-        "workbench.preferredHighContrastColorTheme": "Dracula Theme",
-        "workbench.preferredHighContrastLightColorTheme": "Dracula Theme",
-        "workbench.preferredLightColorTheme": "Dracula Theme",
-        "workbench.iconTheme": "vscode-icons",
-        "editor.snippetSuggestions": "top",
-        "editor.snippets.codeActions.enabled": true,
-        "javascript.suggest.classMemberSnippets.enabled": true,
-        "explorer.autoReveal": false,
-        "vscord.status.idle.disconnectOnIdle": false,
-        "vscord.status.idle.resetElapsedTime": true,
-        "vscord.status.resetElapsedTimePerFile": true,
-        "vscord.behaviour.statusBarAlignment": "Left",
-        "editor.foldingImportsByDefault": true,
-        "javascript.suggest.autoImports": true,
-        "typescript.suggest.autoImports": true,
-        "terminal.integrated.automationProfile.windows": {
-            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "args": ["--login"]
-        },
-        "terminal.integrated.defaultProfile.windows": "Git Bash",
-        "gitlens.fileAnnotations.dismissOnEscape": false,
-        "gitlens.visualHistory.allowMultiple": false,
-        "liveServer.settings.port": 5501
-    },
-    "extensions": {
-        "recommendations": [
-            "abusaidm.html-snippets",
-            "ms-vscode.cpptools",
-            "parthr2031.colorful-comments",
-            "devsense.composer-php-vscode",
-            "mikestead.dotenv",
-            "dracula-theme.theme-dracula",
-            "editorconfig.editorconfig",
-            "usernamehw.errorlens",
-            "dbaeumer.vscode-eslint",
-            "eamodio.gitlens",
-            "ecmel.vscode-html-css",
-            "devsense.intelli-php-vscode",
-            "xabikos.javascriptsnippets",
-            "ms-vscode.vscode-typescript-next",
-            "crystal-spider.jsdoc-generator",
-            "eriklynd.json-tools",
-            "shufo.vscode-blade-formatter",
-            "onecentlin.laravel-blade",
-            "onecentlin.laravel-extension-pack",
-            "amiralizadeh9480.laravel-extra-intellisense",
-            "codingyu.laravel-goto-view",
-            "ms-vscode.notepadplusplus-keybindings",
-            "christian-kohler.path-intellisense",
-            "devsense.phptools-vscode",
-            "bmewburn.vscode-intelephense-client",
-            "esbenp.prettier-vscode",
-            "ms-ceintl.vscode-language-pack-es",
-            "bradlc.vscode-tailwindcss",
-            "vscode-icons-team.vscode-icons",
-            "kisstkondoros.vscode-gutter-preview",
-            "naoray.laravel-goto-components",
-            "pgl.laravel-jump-controller",
-            "mohamedbenhida.laravel-intellisense",
-            "zobo.php-intellisense",
-            "mehedidracula.php-namespace-resolver"
-        ]
-    }
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Refrescar Proyecto (Solo si lo exportaste de GitHub)",
+				"type": "shell",
+				"command": "npm run update_proyect",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Probar en localhost",
+				"type": "shell",
+				"command": "npm run test_localhost",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Probar en Laravel",
+				"type": "shell",
+				"command": "npm run test_laravel",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Iniciar Migraciones",
+				"type": "shell",
+				"command": "npm run make_tables",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Actualizar Migraciones",
+				"type": "shell",
+				"command": "npm run make_tables",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Crear Modelo",
+				"type": "shell",
+				"command": "npm run make_model",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Crear Migracion",
+				"type": "shell",
+				"command": "npm run make_migration",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Crear Controllador",
+				"type": "shell",
+				"command": "npm run make_controller",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Crear Vista",
+				"type": "shell",
+				"command": "npm run make_view",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "Limpiar Cache (Todo)",
+				"type": "shell",
+				"command": "npm run clear_cache",
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"problemMatcher": []
+			}
+		]
+	},
+	"settings": {
+		"files.associations": {
+			"*.blade.php": "blade",
+			"*.css": "css"
+		},
+		"vscord.app.name": "Visual Studio Code",
+		"vscord.status.details.enabled": false,
+		"vscord.status.state.text.editing": "Editando {file_name}{file_extension}",
+		"vscord.status.state.text.debugging": "Probando el archivo {file_name}{file_extension}",
+		"vscord.status.state.text.idle": "Me quede dormido en el archivo {file_name}{file_extension}",
+		"vscord.status.state.text.notInFile": "No estoy haciendo algo",
+		"vscord.status.state.text.noWorkspaceFound": "Por alguna razon, no hay workspace",
+		"vscord.status.state.text.viewing": "Ando checando el archivo {file_name}{file_extension}",
+		"vscord.status.image.large.editing.text": "Editando un archivo {LANG}",
+		"vscord.status.image.large.debugging.text": "Ando testeando un archivo {LANG}",
+		"vscord.status.image.large.idle.text": "Me quede afk en un archivo {LANG}",
+		"vscord.status.image.large.notInFile.text": "Missingno",
+		"vscord.status.image.large.viewing.text": "Ando checando un archivo {LANG}",
+		"vscord.status.image.small.debugging.text": "Probando owo",
+		"vscord.status.image.small.editing.text": "Editando -w-",
+		"vscord.status.image.small.idle.text": "zZzzZ",
+		"vscord.status.image.small.notInFile.text": "???",
+		"vscord.status.image.small.viewing.text": "👀",
+		"eslint.validate": [
+			"javascript",
+			"json",
+			"typescript",
+			"css"
+		],
+		"editor.fontSize": 13,
+		"editor.wordWrap": "on",
+		"window.zoomLevel": -1,
+		"editor.formatOnSave": true,
+		"editor.useTabStops": false,
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"files.autoSave": "onFocusChange",
+		"prettier.tabWidth": 4,
+		"[sql]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[java]": {
+			"editor.formatOnPaste": false,
+			"editor.formatOnSave": false,
+			"editor.formatOnType": false,
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[css]": {
+			"editor.defaultFormatter": "vscode.css-language-features",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[html]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[php]": {
+			"editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[blade]": {
+			"editor.defaultFormatter": "shufo.vscode-blade-formatter",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4,
+			"editor.formatOnPaste": false,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": false
+		},
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.useTabStops": false,
+			"editor.tabSize": 4
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features",
+			"editor.useTabStops": true,
+			"editor.tabSize": 4
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features",
+			"editor.useTabStops": true,
+			"editor.tabSize": 4
+		},
+		"eslint.codeAction.showDocumentation": {
+			"enable": true
+		},
+		"eslint.format.enable": true,
+		"workbench.editor.enablePreview": true,
+		"editor.autoClosingBrackets": "always",
+		"editor.autoClosingComments": "always",
+		"editor.autoClosingDelete": "always",
+		"editor.autoClosingOvertype": "always",
+		"editor.autoClosingQuotes": "always",
+		"editor.definitionLinkOpensInPeek": true,
+		"editor.smoothScrolling": true,
+		"editor.tabCompletion": "on",
+		"diffEditor.codeLens": true,
+		"editor.minimap.autohide": true,
+		"editor.suggest.insertMode": "replace",
+		"files.trimTrailingWhitespace": true,
+		"workbench.reduceMotion": "on",
+		"workbench.startupEditor": "none",
+		"problems.defaultViewMode": "table",
+		"problems.showCurrentInStatus": true,
+		"github.experimental.multipleAccounts": true,
+		"vsicons.presets.jsonOfficial": false,
+		"vsicons.projectDetection.autoReload": false,
+		"vscord.behaviour.debug": true,
+		"jsdoc-generator.generativeLanguage": "Spanish",
+		"jsdoc-generator.generativeModel": "gpt-4",
+		"json.format.keepLines": true,
+		"json.schemaDownload.enable": true,
+		"path-intellisense.showHiddenFiles": true,
+		"javascript.experimental.updateImportsOnPaste": true,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+		"javascript.format.semicolons": "insert",
+		"javascript.referencesCodeLens.enabled": true,
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"js/ts.implicitProjectConfig.checkJs": true,
+		"js/ts.implicitProjectConfig.experimentalDecorators": true,
+		"js/ts.implicitProjectConfig.module": "ES2020",
+		"typescript.experimental.updateImportsOnPaste": true,
+		"typescript.updateImportsOnFileMove.enabled": "always",
+		"typescript.format.semicolons": "insert",
+		"git.ignoreLimitWarning": true,
+		"workbench.preferredDarkColorTheme": "Dracula Theme",
+		"workbench.colorTheme": "Dracula Theme",
+		"workbench.preferredHighContrastColorTheme": "Dracula Theme",
+		"workbench.preferredHighContrastLightColorTheme": "Dracula Theme",
+		"workbench.preferredLightColorTheme": "Dracula Theme",
+		"workbench.iconTheme": "vscode-icons",
+		"editor.snippetSuggestions": "top",
+		"editor.snippets.codeActions.enabled": true,
+		"javascript.suggest.classMemberSnippets.enabled": true,
+		"explorer.autoReveal": false,
+		"vscord.status.idle.disconnectOnIdle": false,
+		"vscord.status.idle.resetElapsedTime": true,
+		"vscord.status.resetElapsedTimePerFile": true,
+		"vscord.behaviour.statusBarAlignment": "Left",
+		"editor.foldingImportsByDefault": true,
+		"javascript.suggest.autoImports": true,
+		"typescript.suggest.autoImports": true,
+		"terminal.integrated.automationProfile.windows": {
+			"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+			"args": [
+				"--login"
+			]
+		},
+		"terminal.integrated.defaultProfile.windows": "Git Bash",
+		"gitlens.fileAnnotations.dismissOnEscape": false,
+		"gitlens.visualHistory.allowMultiple": false,
+		"liveServer.settings.port": 5501
+	},
+	"extensions": {
+		"recommendations": [
+			"abusaidm.html-snippets",
+			"ms-vscode.cpptools",
+			"parthr2031.colorful-comments",
+			"devsense.composer-php-vscode",
+			"mikestead.dotenv",
+			"dracula-theme.theme-dracula",
+			"editorconfig.editorconfig",
+			"usernamehw.errorlens",
+			"dbaeumer.vscode-eslint",
+			"eamodio.gitlens",
+			"ecmel.vscode-html-css",
+			"devsense.intelli-php-vscode",
+			"xabikos.javascriptsnippets",
+			"ms-vscode.vscode-typescript-next",
+			"crystal-spider.jsdoc-generator",
+			"eriklynd.json-tools",
+			"shufo.vscode-blade-formatter",
+			"onecentlin.laravel-blade",
+			"onecentlin.laravel-extension-pack",
+			"amiralizadeh9480.laravel-extra-intellisense",
+			"codingyu.laravel-goto-view",
+			"ms-vscode.notepadplusplus-keybindings",
+			"christian-kohler.path-intellisense",
+			"devsense.phptools-vscode",
+			"bmewburn.vscode-intelephense-client",
+			"esbenp.prettier-vscode",
+			"ms-ceintl.vscode-language-pack-es",
+			"bradlc.vscode-tailwindcss",
+			"vscode-icons-team.vscode-icons",
+			"kisstkondoros.vscode-gutter-preview",
+			"naoray.laravel-goto-components",
+			"pgl.laravel-jump-controller",
+			"mohamedbenhida.laravel-intellisense",
+			"zobo.php-intellisense",
+			"mehedidracula.php-namespace-resolver"
+		]
+	}
 }
