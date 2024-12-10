@@ -1,4 +1,9 @@
 {
+	"folders": [
+		{
+			"path": "."
+		}
+	],
 	"tasks": {
 		"version": "2.0.0",
 		"tasks": [
@@ -104,11 +109,6 @@
 			}
 		]
 	},
-	"folders": [
-		{
-			"path": ".."
-		}
-	],
 	"settings": {
 		"files.associations": {
 			"*.blade.php": "blade",
