@@ -104,6 +104,11 @@
 			}
 		]
 	},
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
 	"settings": {
 		"files.associations": {
 			"*.blade.php": "blade",
