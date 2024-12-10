@@ -1,0 +1,115 @@
+.like-container input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.like-container {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+}
+
+.like-container input {
+	display: none;
+}
+
+.checkmark {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+}
+
+.checkmark svg {
+	width: 100%;
+	height: 100%;
+}
+
+.like {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0); 
+    font-size: 0.8em;
+    text-align: center;
+    z-index: 10;
+    opacity: 0; 
+    pointer-events: none;
+    font-family: 'Quicksand', sans-serif;
+    transition: opacity 0.3s ease, transform 0.6s ease;
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+	fill: black;
+	transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.checkmark:hover {
+	background-color: white;
+}
+
+.checkmark:hover .icon {
+	fill: #9d4a6b;
+	transform: rotate(-8deg);
+	transform-origin: bottom left;
+}
+
+/* When the checkbox is checked, add a blue background */
+.like-container input:checked ~ .like {
+    transform: translateX(-50%) translateY(-2em);
+    animation: up_3951 1s ease-out;
+}
+
+.like-container input:checked ~ .checkmark .icon {
+	fill: #bf5f82;
+	transform: none;
+	animation: 0.5s jump_3951;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.like-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+@keyframes up_3951 {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+	
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-2em);
+    }
+}
+
+@keyframes jump_3951 {
+	50% {
+		transform-origin: center;
+		transform: translateY(-0.5em) rotate(-8deg);
+	}
+
+	100% {
+		transform-origin: center;
+		transform: translateY(0em);
+	}
+}

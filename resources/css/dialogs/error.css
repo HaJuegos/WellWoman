@@ -1,0 +1,204 @@
+.card {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 354px;
+	height: 83px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	background-color: rgb(255 240 254);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 16px;
+	z-index: 200;
+	opacity: 1;
+	font-family: 'Quicksand', sans-serif;
+	animation:
+		slideIn 0.35s ease-in-out forwards,
+		fadeOut 4s 4s forwards;
+}
+
+.wave {
+	position: absolute;
+	transform: rotate(90deg);
+	left: -31px;
+	top: 32px;
+	width: 80px;
+	fill: #fc0c0c3a;
+}
+
+.icon-container {
+	width: 43px;
+	height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fc0c0c48;
+	border-radius: 50%;
+	margin-left: 8px;
+}
+
+.icon {
+	width: 17px;
+	height: 17px;
+	color: #d10d0d;
+}
+
+.message-text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-grow: 1;
+	gap: 3px;
+}
+
+.message-text,
+.sub-text {
+	margin: 0;
+	cursor: default;
+}
+
+.message-text {
+	color: #d10d0d;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.sub-text {
+	font-size: 14px;
+	color: #555;
+}
+
+.cross-icon {
+	width: 18px;
+	height: 18px;
+	color: #555;
+	cursor: pointer;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(200%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateY(20px);
+		transform: translateX(0);
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		padding: 10px 12px;
+		gap: 15px;
+	}
+
+	.icon-container {
+		width: 35px;
+	}
+
+	.message-text {
+		font-size: 0.9375em;
+	}
+
+	.sub-text {
+		font-size: 0.75em;
+	}
+
+	.wave {
+		width: 60px;
+		top: 28px;
+	}
+
+	.cross-icon {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.card {
+		height: auto;
+		padding: 10px 14px;
+		flex-direction: row;
+		gap: 14px;
+	}
+
+	.icon-container {
+		width: 40px;
+	}
+
+	.message-text {
+		font-size: 1em;
+	}
+
+	.sub-text {
+		font-size: 0.8125em;
+	}
+
+	.wave {
+		width: 70px;
+		top: 30px;
+	}
+
+	.cross-icon {
+		width: 17px;
+		height: 17px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.card {
+		width: 354px;
+		height: 83px;
+		padding: 10px 15px;
+		flex-direction: row;
+		gap: 16px;
+	}
+
+	.icon-container {
+		width: 43px;
+		height: 28px;
+	}
+
+	.message-text {
+		font-size: 1.0625em;
+	}
+
+	.sub-text {
+		font-size: 0.875em;
+	}
+
+	.wave {
+		width: 80px;
+		top: 32px;
+	}
+
+	.cross-icon {
+		width: 18px;
+		height: 18px;
+	}
+}

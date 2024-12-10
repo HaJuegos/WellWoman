@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background-image: url(https://i.ibb.co/XpcYhV6/back.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: 'Quicksand', sans-serif;
+	user-select: none;
+	 scrollbar-color: rgba(234, 137, 154, 0.7) rgba(255, 245, 245, 0.8);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 0.4cm;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(234, 137, 154, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(234, 137, 154, 0.7);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 245, 245, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(234, 137, 154, 1);
+}

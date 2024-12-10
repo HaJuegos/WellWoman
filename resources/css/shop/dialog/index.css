@@ -1,0 +1,224 @@
+dialog[open] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 0.5cm;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+
+#addProductDialog[open],
+#editProductDialog[open] {
+    width: 34vw;
+    height: 61vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.dialog-content,
+.editProduct-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    padding: 20px;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.dialog-content h2,
+.editProduct-container h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+    color: rgb(234, 137, 154);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content label,
+.editProduct-container label {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.dialog-content input[type='text'],
+.dialog-content input[type='number'],
+.dialog-content input[type='file'],
+.dialog-content textarea,
+.editProduct-container input[type='text'],
+.editProduct-container input[type='number'],
+.editProduct-container input[type='file'],
+.editProduct-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+    transition: all 0.5s ease-in-out;
+}
+
+.dialog-buttons,
+.editProduct-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dialog-buttons button,
+.editProduct-buttons button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dialog-buttons .submit-btn,
+.editProduct-buttons .editProduct-submit {
+    background-color: rgb(234, 137, 154);
+    color: white;
+}
+
+.dialog-buttons button:hover,
+.editProduct-buttons button:hover {
+    background-color: rgb(204, 100, 120);
+    color: white;
+    transform: scale(1.05);
+}
+
+#edit-productId {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #888;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.editProduct-container textarea,
+.dialog-content textarea {
+    resize: vertical;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dialogo remove */
+dialog#removeitem {
+    width: 325px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+}
+
+.removeitem-container h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 0.7cm;
+    text-align: center;
+}
+
+.removeitem-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.removeitem-btns button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeitem-btns button:first-child {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.removeitem-btns button:first-child:hover {
+    background-color: #ddd;
+}
+
+.removeitem-btns button:last-child {
+    background-color: #f2737b;
+    color: #fff;
+}
+
+.removeitem-btns button:last-child:hover {
+    background-color: #d9505f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #editProductDialog[open],
+    #addProductDialog[open] {
+        width: 82vw;
+        height: 75vh;
+    }
+
+    .removeitem-container h3 {
+        font-size: 1em;
+    }
+
+    .dialog-content h2,
+    .editProduct-container h2 {
+        font-size: 1.5em;
+    }
+
+    .dialog-content label,
+    .editProduct-container label {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1210px) {
+
+    #editProductDialog[open],
+    #addProductDialog[open] {
+        width: 56vw;
+        height: 76vh;
+    }
+
+    .dialog-content h2,
+    .editProduct-container h2 {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 1211px) {
+
+    #editProductDialog[open],
+    #addProductDialog[open] {
+        width: 56vw;
+        height: 76vh;
+    }
+
+    .dialog-content h2,
+    .editProduct-container h2 {
+        font-size: 2em;
+    }
+}

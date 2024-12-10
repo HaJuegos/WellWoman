@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(255 240 254);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	scrollbar-color: rgba(234, 137, 154, 0.7) rgba(255, 245, 245, 0.8);
+	scrollbar-width: thin;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+	width: 0.4cm;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(234, 137, 154, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(234, 137, 154, 0.7);
+	border-radius: 10px;
+	border: 2px solid rgba(255, 245, 245, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(234, 137, 154, 1);
+}
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header {
+		min-height: 40vh;
+		max-height: 50vh;
+		position: static;
+	}
+
+	main {
+		flex-direction: column;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	header {
+		min-height: 9.6vh;
+		max-height: 12vh;
+	}
+
+	main {
+		padding-top: 9.8vw;
+	}
+
+	footer {
+		min-height: 10vh;
+		max-height: 15vh;
+	}
+}
+
+@media (min-width: 1025px) {
+	header {
+		min-height: 9vh;
+		max-height: 15vh;
+		height: auto;
+	}
+
+	main {
+		padding-top: 9.7vh;
+	}
+
+	footer {
+		height: auto;
+	}
+
+	main {
+		flex-direction: row;
+	}
+}

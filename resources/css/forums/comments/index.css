@@ -1,0 +1,253 @@
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.post {
+    margin-bottom: 0;
+    box-shadow: 0 0 0 black;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.comments {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff7f6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.35);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 1px solid rgba(176, 176, 176, 0.45);
+}
+
+.comments h3 {
+    font-size: 1.5rem;
+    color: #bf5f82;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.add-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.add-comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+    background-color: #f4f8fb;
+    resize: vertical;
+}
+
+.add-comment-form textarea:focus {
+    border-color: #bf5f82;
+    outline: none;
+}
+
+.add-comment-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #bf5f82;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-comment-form button:hover {
+    background-color: #9d4a6b;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 1px solid rgba(176, 176, 176, 0.45);
+    padding-top: 5px;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #bf5f82;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.comment-info .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #bf5f82;
+    margin: 0px;
+    margin-bottom: 11px;
+    margin-top: 16px;
+    transition: color 0.3s ease;
+}
+
+.comment-info .date {
+    font-size: 0.9rem;
+    color: #657786;
+    margin-top: 0px;
+}
+
+.comment-body {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #5e4b4b;
+    margin-bottom: 10px;
+}
+
+.comment-footer {
+    display: flex;
+    height: 11%;
+    width: 100%;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 1cm;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-img-comment {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btns-comment form {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-like-count {
+    font-size: 0.9rem;
+    color: #657786;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.btn-img-comment:hover {
+    transform: scale(1.1);
+    padding: 0px;
+    margin: 0;
+}
+
+.comment-like-count {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+}
+
+.delete-comment {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.delete-comment:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.05);
+}
+
+.delete-comment .material-symbols-outlined {
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shake {
+    animation: shake 0.15s ease-in-out infinite;
+}
+
+.red-filter {
+    filter: brightness(0.7) sepia(1) hue-rotate(-50deg) saturate(5);
+    transition: filter 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        rotate: 0deg;
+    }
+
+    10% {
+        rotate: .5deg;
+    }
+
+    20% {
+        rotate: 0deg;
+    }
+
+    30% {
+        rotate: -.5deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}

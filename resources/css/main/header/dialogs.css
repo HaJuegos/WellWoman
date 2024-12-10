@@ -1,0 +1,16 @@
+#nologin {
+	background-color: rgb(230, 224, 224);
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid red;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+.nologin-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

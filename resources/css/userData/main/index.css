@@ -1,0 +1,100 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(252, 244, 246);
+	color: #333;
+}
+
+.datos {
+	width: 500px;
+	margin: 2rem auto;
+	padding: 1rem;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tituloUno {
+	text-align: center;
+	color: rgb(252, 143, 186);
+}
+
+.secDatos {
+	margin-bottom: 2rem;
+}
+
+.tituloDos {
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+form label {
+	display: block;
+	margin: 1rem 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #e59c9c;
+	background-color: rgba(243, 212, 223, 0.445);
+	border-radius: 4px;
+	width: 98%;
+}
+
+.buttonD {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	color: rgb(153, 24, 110);
+	background-color: rgb(243, 212, 223);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.buttonD:hover {
+	background-color: rgb(255, 170, 204);
+	transition: 0.5s;
+}
+.secDatos input[type='checkbox'] {
+	appearance: none;
+	-webkit-appearance: none;
+	background-color: rgb(243, 212, 223);
+	border: 2px solid rgb(255, 170, 204);
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
+	transition:
+		background-color 0.3s,
+		border-color 0.3s;
+	position: relative;
+}
+
+.secDatos input[type='checkbox']:checked {
+	background-color: rgb(255, 170, 204);
+	border-color: rgb(200, 120, 150);
+}
+
+.secDatos input[type='checkbox']:checked::after {
+	content: '✓';
+	font-size: 1rem;
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+}
+
+.secDatos label {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	cursor: pointer;
+}

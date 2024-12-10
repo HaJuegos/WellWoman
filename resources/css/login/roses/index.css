@@ -1,0 +1,79 @@
+.rosa {
+    position: absolute;
+    bottom: -100px;
+    width: 90px;
+    height: 90px;
+    animation: flotacion 20s linear infinite;
+    opacity: 0;
+    user-select: none;
+}
+
+@keyframes flotacion {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    1% {
+        opacity: 0.5;
+    }
+    25% {
+        transform: translateX(20vw) translateY(-25vh);
+    }
+    50% {
+        transform: translateX(-20vw) translateY(-50vh);
+    }
+    75% {
+        transform: translateX(20vw) translateY(-75vh);
+    }
+    90% {
+        transform: translateX(5vw) translateY(-90vh);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0) translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .rosa {
+        display: none;
+    }
+}
+
+.rosa:nth-child(1) {
+    animation-delay: 0s;
+    left: 10%;
+}
+.rosa:nth-child(2) {
+    animation-delay: 5s;
+    left: 20%;
+}
+.rosa:nth-child(3) {
+    animation-delay: 1s;
+    left: 30%;
+}
+.rosa:nth-child(4) {
+    animation-delay: 7s;
+    left: 40%;
+}
+.rosa:nth-child(5) {
+    animation-delay: 4s;
+    left: 50%;
+}
+.rosa:nth-child(6) {
+    animation-delay: 3s;
+    left: 60%;
+}
+.rosa:nth-child(7) {
+    animation-delay: 10s;
+    left: 70%;
+}
+.rosa:nth-child(8) {
+    animation-delay: 6s;
+    left: 80%;
+}
+.rosa:nth-child(9) {
+    animation-delay: 8s;
+    left: 90%;
+}

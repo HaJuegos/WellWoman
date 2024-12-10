@@ -1,0 +1,137 @@
+.missing-cycle {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+    width: 90%;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1cm;
+}
+
+.missing-cycle h1 {
+    font-size: 2em;
+    color: #444;
+    transition: all 0.3s ease-in-out;
+}
+
+.missing-cycle h2 {
+    font-size: 1.5em;
+    color: #f2737b;
+    transition: all 0.3s ease-in-out;
+}
+
+.missing-cycle p {
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-setup-cycle {
+    background-color: #f3a6b0;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-setup-cycle:hover {
+    background-color: #f2737b;
+}
+
+.missing-cycle img {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .missing-cycle {
+        width: 100%;
+        padding: 15px;
+        gap: 0.5cm;
+    }
+
+    .missing-cycle h1 {
+        font-size: 1.8em;
+    }
+
+    .missing-cycle h2 {
+        font-size: 1.3em;
+    }
+
+    .btn-setup-cycle {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .missing-cycle img {
+        width: 90%;
+        max-width: 280px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .missing-cycle {
+        width: 98%;
+        padding: 20px;
+        gap: 1cm;
+    }
+
+    .missing-cycle h1 {
+        font-size: 1.9em;
+    }
+
+    .missing-cycle h2 {
+        font-size: 1.4em;
+    }
+
+    .btn-setup-cycle {
+        padding: 12px 24px;
+        font-size: 1.1em;
+    }
+
+    .missing-cycle img {
+        width: 75%;
+        max-width: 280px;
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .missing-cycle {
+        width: 100%;
+        padding: 30px;
+        gap: 1.5cm;
+    }
+
+    .missing-cycle h1 {
+        font-size: 2.2em;
+    }
+
+    .missing-cycle h2 {
+        font-size: 1.6em;
+    }
+
+    .btn-setup-cycle {
+        padding: 14px 28px;
+        font-size: 1.2em;
+    }
+
+    .missing-cycle img {
+        width: 70%;
+        max-width: 300px;
+        margin-top: 40px;
+    }
+}

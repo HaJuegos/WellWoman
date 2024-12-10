@@ -1,0 +1,160 @@
+h1 {
+    text-align: center;
+    color: rgb(247, 132, 151);
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: rgb(251, 232, 241);
+    border-radius: 10px;
+    border: pink 1px solid;
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(131, 77, 86);
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+}
+
+fieldset {
+    border: 1px solid pink;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(247, 132, 151);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.guardar {
+    background-color: pink;
+    border-radius: 5px;
+    border: 1px solid rgb(243, 143, 159);
+}
+
+.guardar:hover {
+    background-color: rgb(253, 138, 157);
+    transition: 0.5s ease;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.toggle-switch input[type='checkbox'] {
+    display: none;
+}
+
+.toggle-switch-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-switch-handle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle-switch input[type='checkbox']:checked+.toggle-switch-background {
+    background-color: pink;
+    box-shadow: inset 0 0 0 2px rgb(236, 121, 140);
+}
+
+.toggle-switch input[type='checkbox']:checked+.toggle-switch-background .toggle-switch-handle {
+    transform: translateX(40px);
+}
+
+.toggle-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Estilos del checkbox personalizado */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    margin-bottom: 10px;
+
+}
+
+/* Crear el checkbox personalizado */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 0.2pc;
+    margin-right: 10px;
+}
+
+.container input:checked~.checkmark {
+    background-color: pink;
+}
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+.Frecuencia {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}

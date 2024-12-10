@@ -1,0 +1,390 @@
+.manage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.manage-list {
+    background-color: #fff;
+    padding: 9px;
+    border-radius: 8px;
+    box-shadow: 0 0px 14px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: 86vh;
+    height: 86%;
+    width: 80%;
+}
+
+.manage-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+.manage-title h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+}
+
+.manage-search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.manage-search label {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.manage-search input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.manage-search input:focus {
+    border-color: #f2737b;
+    background-color: #fff;
+    outline: none;
+}
+
+.manage-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.manage-table thead {
+    background-color: #d9d9d9;
+    color: #333;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.manage-table .id-column {
+    width: 4%;
+}
+
+.manage-table .user-column {
+    width: 3%;
+}
+
+.manage-table .lastsession-column {
+    width: 10%;
+}
+
+.manage-table .rol-column {
+    width: 6%;
+}
+
+.manage-table .actionsbtns-column {
+    width: 15%;
+    text-align: center;
+}
+
+.manage-table th,
+.manage-table td {
+    padding: 13px 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-table th {
+    text-align: center;
+}
+
+.manage-table tbody tr {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.manage-table tbody tr:hover {
+    background-color: #f3f3f3;
+}
+
+.manage-table .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.manage-table .btns button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.manage-table .btns button:nth-child(1) {
+    background-color: #f3a6b0;
+    color: #fff;
+}
+
+.manage-table .btns button:nth-child(2) {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.manage-table .btns button:hover {
+    transform: scale(1.15);
+}
+
+.manage-table .id {
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    background-color: #f3f3f3;
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-name-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.user-name-info .user-name {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+}
+
+.manage-table .date,
+.manage-table .roles {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .manage-container {
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .manage-list {
+        width: 95%;
+        height: auto;
+    }
+
+    .manage-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .manage-title h1 {
+        font-size: 1.5em;
+    }
+
+    .manage-search {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .manage-search label {
+        font-size: 1em;
+    }
+
+    .manage-search input {
+        width: 100%;
+        padding: 8px 12px;
+    }
+
+    .manage-table {
+        font-size: 0.9em;
+    }
+
+    .manage-table th,
+    .manage-table td {
+        padding: 10px;
+    }
+
+    .manage-table .id-column,
+    .manage-table .user-column,
+    .manage-table .lastsession-column,
+    .manage-table .rol-column,
+    .manage-table .actionsbtns-column {
+        width: auto;
+    }
+
+    .manage-table .btns {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .manage-table .btns button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .user-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-name-info .user-name {
+        display: block;
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .email-user {
+        display: block;
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .manage-container {
+        padding: 15px;
+    }
+
+    .manage-list {
+        width: 90%;
+    }
+
+    .manage-title h1 {
+        font-size: 1.7em;
+    }
+
+    .manage-search {
+        gap: 8px;
+    }
+
+    .manage-search input {
+        width: 250px;
+    }
+
+    .manage-table {
+        font-size: 1em;
+    }
+
+    .manage-table th,
+    .manage-table td {
+        padding: 12px;
+    }
+
+    .manage-table .id-column,
+    .manage-table .user-column,
+    .manage-table .lastsession-column,
+    .manage-table .rol-column,
+    .manage-table .actionsbtns-column {
+        width: auto;
+    }
+
+    /* Botones en línea */
+    .manage-table .btns {
+        flex-direction: row;
+    }
+
+    .manage-table .btns button {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .user-info {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .user-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .manage-list {
+        width: 80%;
+    }
+
+    .manage-title h1 {
+        font-size: 1.8em;
+    }
+
+    .manage-search input {
+        width: 300px;
+    }
+
+    .manage-table {
+        font-size: 1em;
+    }
+
+    .manage-table th,
+    .manage-table td {
+        padding: 13px 10px;
+    }
+
+    .manage-table .id-column,
+    .manage-table .user-column,
+    .manage-table .lastsession-column,
+    .manage-table .rol-column,
+    .manage-table .actionsbtns-column {
+        width: auto;
+    }
+
+    .manage-table .btns {
+        flex-direction: row;
+    }
+
+    .manage-table .btns button {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .user-info {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .user-icon {
+        width: 50px;
+        height: 50px;
+    }
+}

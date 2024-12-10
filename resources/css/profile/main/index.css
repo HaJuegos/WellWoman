@@ -1,0 +1,501 @@
+/* Todo lo relacionado al perfil general */
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(122, 127, 139, 0.3);
+    transition: all 0.4s ease;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 80vw;
+    min-width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px;
+    background-color: #eceff1;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 22px;
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 240, 254);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    transform: scale(1);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-image:active {
+    transform: scale(0.9);
+}
+
+.profile-img-container {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0rem;
+}
+
+/* Botones del ciclo */
+.profile-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-btns h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #2b3a42;
+    transition: all 0.5s ease-in-out;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.checkbox-btn {
+    display: flex;
+    width: 18.7vw;
+    height: 1.4cm;
+    color: black;
+    background-color: rgb(207 207 207 / 80%);
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.checkbox-btn input[type='checkbox'] {
+    display: none;
+}
+
+.checkbox-btn:has(input[type='checkbox']:checked) span {
+    color: white;
+}
+
+.checkbox-btn:has(input[type='checkbox']:checked) {
+    background-color: rgb(255, 170, 204);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox-btn:hover span {
+    transform: scale(1.01);
+}
+
+.checkbox-btn:hover {
+    transform: scale(1.02);
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2b3a42;
+}
+
+.profile-name-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: static;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: rgb(217, 217, 217);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.badges span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.badges span:nth-of-type(1) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#badgeAdmin {
+    background: linear-gradient(90deg, #ffdf00, #ffea80, #ffdf00);
+    background-size: 300%;
+    animation: gold-glow 5s linear infinite;
+    color: #333333;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#badgeVendor {
+    background-color: #a3d9a5;
+    color: #1b4b21;
+}
+
+.badges span::after {
+    content: attr(data-role);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-family: 'Quicksand', sans-serif;
+    white-space: nowrap;
+    text-transform: none;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    z-index: 1000;
+}
+
+.badges span:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.profile-email {
+    font-size: 1rem;
+    color: #5a6e75;
+}
+
+/* Todos los botones despues de lo del ciclo */
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #050505;
+    background-color: rgba(248, 195, 216, 0.553);
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    border: none;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.profile-button:hover {
+    background-color: rgb(255, 170, 204);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.04);
+}
+
+.profile-button:active {
+    transform: scale(0.95);
+}
+
+.profile-button.logout {
+    background-color: rgba(199, 70, 70, 0.8);
+    color: #fff;
+}
+
+.profile-button.logout:hover {
+    background-color: rgba(255, 90, 90, 0.9);
+}
+
+.profile-button span {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.nonevisible {
+    display: none;
+}
+
+@keyframes gold-glow {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .profile-container {
+        max-width: 90vw;
+        min-width: 80vw;
+        padding: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-texts {
+        padding-top: 0px;
+        align-items: center;
+    }
+
+    .profile-btns {
+        margin: 0;
+        gap: 0;
+        padding-left: 4vw;
+        overflow: hidden;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    .profile-btns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .profile-header {
+        flex-direction: column;
+    }
+
+    .profile-name {
+        font-size: 1.4rem;
+    }
+
+    .profile-email {
+        font-size: 1rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .profile-button {
+        font-size: 1rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .checkbox-btn {
+        min-width: 192.768px;
+        max-width: 25.1vw;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile-container {
+        max-width: 85vw;
+        min-width: 75vw;
+        padding: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        justify-content: space-evenly;
+    }
+
+    .profile-btns {
+        margin: 0;
+        gap: 0;
+        padding-left: 4vw;
+        overflow: hidden;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    .profile-btns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .profile-button {
+        font-size: 1rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .checkbox-btn {
+        width: 23.1vw;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .profile-container {
+        max-width: 61vw;
+        min-width: 66vw;
+        padding: 30px;
+        justify-content: space-evenly;
+        margin: 0.57cm;
+    }
+
+    .profile-header {
+        gap: 0.5cm;
+        transform: scale(1.15);
+        padding-top: 15px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-email {
+        font-size: 1.1rem;
+    }
+
+    .profile-button {
+        font-size: 1rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .profile-btns {
+        margin: 0;
+        gap: 0;
+        padding-left: 3.1vw;
+        align-items: flex-start;
+        overflow: auto;
+        font-size: 1.2rem;
+        overflow: auto;
+    }
+
+    .profile-btns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .profile-button {
+        font-size: 1.2rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .checkbox-btn {
+        width: 17.4vw;
+        font-size: 1rem;
+    }
+}

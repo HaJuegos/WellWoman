@@ -1,0 +1,167 @@
+.form-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+
+.config-container {
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+	padding: 1.5rem;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.config-selector {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.config-container h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1.4rem;
+	margin-top: 0;
+	text-align: center;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.config-group {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.config-group label {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	flex: 1;
+}
+
+.config-group select {
+	padding: 8px;
+	border: none;
+	border-bottom: 2px solid rgba(234, 137, 154, 0.8);
+	background: transparent;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	transition: border-bottom 0.3s ease;
+	color: rgb(34, 34, 34);
+}
+
+.config-group select:focus {
+	outline: none;
+	border-bottom: 2px solid rgba(255, 140, 203, 0.9);
+}
+
+.config-helper {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.9rem;
+	color: #6c757d;
+	margin-top: 0.3rem;
+	text-align: justify;
+	line-height: 1.4;
+}
+
+.input-date-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.input-date-container input[type="date"] {
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid rgba(234, 137, 154, 0.8);
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    transition: border-bottom 0.3s ease, background-color 0.3s ease;
+    color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+.input-date-container input[type="date"]:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(255, 140, 203, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-date-container label {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+.input-date-container .config-helper {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 0.3rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.config-container {
+		padding: 1.5rem;
+		width: 90%;
+	}
+
+	.config-group {
+		gap: 0.7rem;
+	}
+
+	.config-group select,
+	.config-group label {
+		width: 100%;
+		/* Alineación en pantallas pequeñas */
+	}
+
+	.submit-btn {
+		font-size: 0.9rem;
+		padding: 8px 16px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.config-container {
+		max-width: 700px;
+	}
+
+	.config-group select {
+		padding: 12px;
+		font-size: 1rem;
+	}
+
+	.submit-btn {
+		padding: 12px;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1025px) {
+	.config-container {
+		max-width: 818px;
+	}
+
+	.submit-btn {
+		font-size: 1.1rem;
+	}
+}

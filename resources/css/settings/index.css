@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(255 240 254);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	scrollbar-color: rgba(234, 137, 154, 0.7) rgba(255, 245, 245, 0.8);
+	scrollbar-width: thin;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	transition: all 0.5s ease-in-out;
+	font-family: 'Quicksand', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 0.4cm;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(234, 137, 154, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(234, 137, 154, 0.7);
+	border-radius: 10px;
+	border: 2px solid rgba(255, 245, 245, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(234, 137, 154, 1);
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	main {
+		padding-top: 9.8vw;
+	}
+}
+
+@media (min-width: 1025px) {
+	main {
+		padding-top: 11vh;
+		padding-bottom: 2vh;
+	}
+}
