@@ -13,11 +13,11 @@
         'resources/css/forums/index.css',
         'resources/css/forums/main/index.css',
         'resources/css/forums/main/like.css',
-
+    
         'resources/css/forums/comments/index.css',
-
+    
         'resources/css/forums/dialogs/confirmDel.css',
-
+    
         // JS
         'resources/js/forums/updateLikes.js',
         'resources/js/forums/comments/orderBy.js',
@@ -32,6 +32,7 @@
     </script>
 
     <title>WellWoman - Comentarios del Foro "{{ $foro->name }}"</title>
+
 </head>
 
 <body>
